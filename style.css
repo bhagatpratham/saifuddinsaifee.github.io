@@ -10,7 +10,7 @@
 }
 
 section {
-    border: 1px solid red;
+    /* border: 1px solid red; */
     width: 85%;
     margin: auto;
 }
@@ -91,6 +91,7 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    margin-bottom: 3rem;
     /* width: 85%; */
 }
 
@@ -131,6 +132,11 @@ h1, p {
     margin: 0 auto 2.5rem auto;
 }
 
+.hero-buybtns button:hover{
+    transform: scale(1.05);
+    translate: 0 -5px;
+}
+
 .editor img{
     width: 600px;
     border-radius: 1rem;
@@ -140,4 +146,14 @@ h1, p {
     0 4px 4px hsla(240, 100%, 89%, 0.075),
     0 8px 8px hsla(240, 100%, 89%, 0.075),
     0 16px 16px hsla(240, 100%, 89%, 0.075);
+}
+
+.hero-section p {
+    font-size: 2rem;
+    width: 70%;
+    text-align: center;
+}
+
+.hero-section {
+
 }
