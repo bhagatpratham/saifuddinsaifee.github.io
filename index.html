@@ -13,10 +13,10 @@
                 <h1>HyperBlog</h1>
             </div>
             <nav class="links">
-                <a class="nav-link" href="#htu">How to use</a>
-                <a class="nav-link" href="#ftrs-section">Features</a>
-                <a class="nav-link" href="#pricing-section">Pricing</a>
-                <a class="nav-link" href="#faqs-section">FAQs</a>
+                <a class="nav-link" href="#HowToUse">How to use</a>
+                <a class="nav-link" href="#Features">Features</a>
+                <a class="nav-link" href="#Pricing">Pricing</a>
+                <a class="nav-link" href="#FAQs">FAQs</a>
             </nav>
             <nav class="links">
                 <a class="nav-link navbtn" href="#">Login</a>
@@ -61,7 +61,7 @@
             </section>
 
             <!-- How to use section -->
-            <section class="htu">
+            <section class="htu" id="HowToUse">
                 <div class="htu-section">
                     <h2 class="heading">
                         <span class="grad-span">How to use?</span>
@@ -69,7 +69,7 @@
                     <p>It's as simple as 1, 2, 3...</p>
                     <div class="steps">
                         <div class="step1 step">
-                            <img src="./images/Upload.svg" alt="">
+                            <img src="./images/Upload.svg" alt="" />
                             <h3>Step 1</h3>
                             <h4>Upload any document</h4>
                             <p>
@@ -81,7 +81,7 @@
                             </p>
                         </div>
                         <div class="step2 step">
-                            <img src="./images/raphael_magic.svg" alt="">
+                            <img src="./images/raphael_magic.svg" alt="" />
                             <h3>Step 2</h3>
                             <h4>Start writing your articles</h4>
                             <p>
@@ -92,7 +92,7 @@
                             </p>
                         </div>
                         <div class="step3 step">
-                            <img src="./images/Pen.svg" alt="">
+                            <img src="./images/Pen.svg" alt="" />
                             <h3>Step 3</h3>
                             <h4>Review and edit</h4>
                             <p>
@@ -108,13 +108,17 @@
             </section>
 
             <!-- Features section -->
-            <section class="ftrs-section">
+            <section class="ftrs-section" id="Features">
                 <h2 class="heading">
                     <span class="grad-span">Features</span>
                 </h2>
                 <div class="features">
                     <div class="feature feature1">
-                        <img class="feat-img" src="./images/whrectangle.svg" alt="" />
+                        <img
+                            class="feat-img"
+                            src="./images/whrectangle.svg"
+                            alt=""
+                        />
                         <div class="feat-desc">
                             <h3 class="feat-head">
                                 Create your own tiny blog with the power of Al
@@ -130,7 +134,11 @@
                         </div>
                     </div>
                     <div class="feature feature2">
-                        <img class="feat-img" src="./images/whrectangle.svg" alt="" />
+                        <img
+                            class="feat-img"
+                            src="./images/whrectangle.svg"
+                            alt=""
+                        />
                         <div class="feat-desc">
                             <h3 class="feat-head">
                                 Write your articles in our Al powered editor
@@ -147,7 +155,11 @@
                         </div>
                     </div>
                     <div class="feature feature3">
-                        <img class="feat-img" src="./images/whrectangle.svg" alt="" />
+                        <img
+                            class="feat-img"
+                            src="./images/whrectangle.svg"
+                            alt=""
+                        />
                         <div class="feat-desc">
                             <h3 class="feat-head">
                                 Fix your on-page SEO errors automatically with
@@ -167,35 +179,33 @@
             </section>
 
             <!-- Pricing section -->
-            <section class="pricing-section">
+            <section class="pricing-section" id="Pricing">
                 <h2 class="heading">Pricing</h2>
-                <div class="plans free-plan">
-                    <div class="plan">
+                <div class="plans">
+                    <div class="plan free-plan">
                         <h3 class="plan-head">Free trial</h3>
+                        <p class="plan-price">$0<br>/mo</p>
                         <ul class="perks">
-                            <li class="plan-price">$0/mo</li>
                             <li class="plan-feat">Generate 3</li>
                             <li class="plan-feat">SEO optimization</li>
                         </ul>
-                        <button id="plan-free-btn">Subscribe</button>
+                        <button id="plan-free-btn"> <span>Subscribe</span></button>
                     </div>
-                </div>
-                <div class="plans plan-pro">
-                    <div class="plan">
+
+                    <div class="plan plan-pro">
                         <h3 class="plan-head">Pro Plan</h3>
+                        <p class="plan-price">$19<br>/mo</p>
                         <ul class="perks">
-                            <li class="plan-price">$19/mo</li>
                             <li class="plan-feat">10,000 tokens</li>
                             <li class="plan-feat">SEO optimization</li>
                         </ul>
-                        <button id="plan-pro-btn">Subscribe</button>
+                        <button id="plan-pro-btn"> <span>Subscribe</span></button>
                     </div>
-                </div>
-                <div class="plans oto">
-                    <div class="plan">
+
+                    <div class="plan oto">
                         <h3 class="plan-head">One Time Offer</h3>
+                        <p class="plan-price">$49<br>/Lifetime</p>
                         <ul class="perks">
-                            <li class="plan-price">$49/Lifetime</li>
                             <li class="plan-feat">
                                 All the features of Pro plan
                             </li>
@@ -203,44 +213,43 @@
                                 Access (Bring your own API key)
                             </li>
                         </ul>
-                        <button id="plan-oto-btn">Subscribe</button>
+                        <button id="plan-oto-btn"> <span>Subscribe</span></button>
                     </div>
-                </div>
-                <div class="plans">
+
                     <div class="plan etrp">
                         <h3 class="plan-head">Enterprise</h3>
+                        <p class="plan-price">Custom</p>
                         <ul class="perks">
-                            <li class="plan-price">Custom</li>
                             <li class="plan-feat">Generate unlimited blogs</li>
                             <li class="plan-feat">SEO optimization</li>
                             <li class="plan-feat">Chatbot support</li>
                         </ul>
-                        <button id="plan-etrp-btn">Subscribe</button>
+                        <button id="plan-etrp-btn"> <span>Contact Us📞</span></button>
                     </div>
                 </div>
             </section>
 
             <!-- FAQs section -->
-            <section class="faqs-section">
+            <section class="faqs-section" id="FAQs">
                 <h2 class="heading">FAQs</h2>
                 <div class="faq-box">
                     <div class="qna qna1">
                         <p class="question">
-                            What file format should I upload to HyperBlog.me?
+                            Q. What file format should I upload to HyperBlog.me?
                         </p>
                         <p class="answer">
-                            HyperBlog.me accepts .txt, .pdf, .doc documents for
+                            A. HyperBlog.me accepts .txt, .pdf, .doc documents for
                             easy content upload. (The team is working
                             exceptionally to add support for more file formats)
                         </p>
                     </div>
                     <div class="qna qna2">
                         <p class="question">
-                            Can I customize the tone and target audience of my
+                            Q. Can I customize the tone and target audience of my
                             articles?
                         </p>
                         <p class="answer">
-                            Absolutely! HyperBlog.me allows you to define the
+                            A. Absolutely! HyperBlog.me allows you to define the
                             tone and target audience for your articles. Whether
                             you want a formal tone for professional content or a
                             conversational tone for a friendly approach, our
@@ -249,10 +258,10 @@
                     </div>
                     <div class="qna qna3">
                         <p class="question">
-                            Will the generated articles be SEO-optimized?
+                            Q. Will the generated articles be SEO-optimized?
                         </p>
                         <p class="answer">
-                            Yes, indeed! When you click "Generate with AI,"
+                            A. Yes, indeed! When you click "Generate with AI,"
                             HyperBlog.me's AI-powered algorithms generate
                             SEO-optimized articles for you. This means your
                             content will be optimized for search engine
@@ -262,10 +271,10 @@
                     </div>
                     <div class="qna qna3">
                         <p class="question">
-                            When can we expect the launch of HyperBlog?
+                            Q. When can we expect the launch of HyperBlog?
                         </p>
                         <p class="answer">
-                            HyperBlog is currently under development, and we're
+                            A. HyperBlog is currently under development, and we're
                             eagerly preparing for the launch of our beta
                             version. Till then, you can sign up now for a
                             one-time limited pre-launch offer. 🚀
@@ -279,7 +288,7 @@
                 <p class="copyright">© 2023 HyperBlog. All rights reserved.</p>
                 <div class="footler-links">
                     <a href="#">Term of Service</a>
-                    <a href="#">Privacy Policy</a>
+                    <a class="midLink" href="#">Privacy Policy</a>
                     <a href="#">Contact Us</a>
                 </div>
             </section>

@@ -8,10 +8,14 @@
     font-family: "DM Sans", sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 section {
     /* border: 1px solid red; */
     width: 85%;
-    margin: auto;
+    margin: 4rem auto;
 }
 
 body {
@@ -57,6 +61,7 @@ body {
     padding: 1rem;
     text-decoration: none;
     color: rgb(108, 108, 108);
+    display: inline-block;
     /* border: 1px solid red */
 }
 
@@ -86,7 +91,8 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-bottom: 3rem;
+    margin-top: 0;
+    /* margin-bottom: 3rem; */
     /* width: 85%; */
 }
 
@@ -229,7 +235,7 @@ body {
 /* Features section CSS */
 
 .ftrs-section {
-    padding: 3rem;
+    padding: 0 3rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -241,7 +247,6 @@ body {
 }
 
 .features {
-    /* border: 1px solid red; */
     width: fit-content;
     height: fit-content;
     background: white;
@@ -259,10 +264,8 @@ body {
 }
 
 .feature {
-    /* width: 60%; */
     width: 711px;
     height: 273px;
-    /* border: 1px solid pink; */
     margin: 1rem;
     display: flex;
     justify-content: center;
@@ -312,9 +315,160 @@ body {
 .feat-desc {
     height: 250px;
     margin: 2rem;
-    /* padding: 2rem; */
     display: flex;
     justify-content: space-around;
     align-items: start;
     flex-direction: column;
+}
+
+/* Pricing section CSS */
+.pricing-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    background: white;
+    padding: 3rem;
+}
+
+.plans {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.plan {
+    margin: 3rem 1.75rem;
+    padding: 2rem 2rem;
+    width: 205px;
+    height: 19rem;
+    display: flex;
+    justify-content: str;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 26px;
+    background: linear-gradient(126deg, #3f2e99 19.79%, #2b5aaf 82.29%);
+    box-shadow: 0px 42px 34px 0px rgba(82, 67, 194, 0.3);
+    color: white;
+}
+
+.plan:hover {
+    translate: 0 -8px;
+}
+
+ .plan .plan-head {
+    color: rgba(255, 255, 255, 0.718);
+    font-weight: 400;
+    font-size: 1.8rem;
+    height: 20%;
+}
+
+.plan .plan-price {
+    font-weight: 700;
+    width: 100%;
+    font-size: 34px;
+    height: 40%;
+    display: flex;
+    justify-content: start;
+    align-items: flex-start;
+
+}
+
+.plan .perks {
+    /* list-style: none; */
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-direction: column;
+    width: 89%;
+}
+
+.perks li {
+    margin: 0.2rem;
+
+}
+
+
+.plan button {
+    min-height: 3rem;
+    width: 100%;
+    margin-top: 2rem;
+    border-radius: 1.5rem;
+    border: 3px solid transparent;
+    background: white;
+    font-size: 1.1rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.plan button:hover {
+    border-color: #8e2de2;
+
+
+}
+
+.plan button span {
+    background: var(--stdGrad);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+/* FAQs section CSS */
+
+.faqs-section {
+    width: 60%;
+    max-width: 936px;
+    min-width: 800px;
+    height: fit-content;
+}
+
+.qna {
+    margin: 2.5rem;
+}
+
+.qna p {
+    margin: 1rem;
+    font-size: 1.5rem;
+}
+
+.qna .question {
+    font-weight: bold;
+}
+
+.qna .answer {
+    background: var(--stdGrad);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+/* Footer section CSS */
+.footer-section {
+    background: rgba(23, 18, 42, 0.874);
+    color: white;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 3rem;
+    margin-bottom: 0;
+}
+
+.footler-links {
+    margin: 0.5rem;
+}
+
+.footler-links a {
+    text-decoration: none;
+    color: white;
+    padding: 0.1rem 0.5rem;
+}
+
+.footler-links .midLink {
+    border: 1px solid white;
+    border-top: none;
+    border-bottom: none;
 }
