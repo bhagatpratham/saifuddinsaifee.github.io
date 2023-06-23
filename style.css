@@ -22,9 +22,11 @@ body {
     flex-direction: column; */
 }
 
+/* Navbar section CSS */
+
 .navbar {
     width: 85%;
-    /* max-width: 1110px; */
+    max-width: 1400px;
     height: 70px;
     border-radius: 16.5px;
     background: rgb(255, 255, 255);
@@ -77,12 +79,7 @@ body {
     transform: scale(1.075);
 }
 
-/* main {
-    display: flex;
-    justify-self: center;
-    align-items: center;
-    flex-direction: column;
-} */
+/* Hero section CSS */
 
 .hero-section {
     display: flex;
@@ -113,7 +110,8 @@ body {
     text-align: center;
 }
 
-.hero-desc h1, .hero-desc p {
+.hero-desc h1,
+.hero-desc p {
     margin: 2.2rem auto;
 }
 
@@ -152,6 +150,8 @@ body {
     margin: 2rem;
 }
 
+/* How to use section CSS */
+
 .htu {
     padding: 4rem 0;
     width: 100%;
@@ -171,48 +171,47 @@ body {
     flex-direction: column;
 }
 
-.htu-section .heading{
+.htu-section .heading,
+.heading {
     font-size: 40px;
+    text-align: center;
 }
 
 .htu-section p {
     margin: 2rem;
-    color: rgb(108, 108, 108);;
+    color: rgb(108, 108, 108);
 }
 
 .htu-section .steps {
-
-    width: 80%;
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-direction: row;
     margin: 1rem 0 3rem 0;
-
 }
 
 .step {
-    width: 25%;
     display: flex;
     align-items: center;
     justify-content: start;
     flex-direction: column;
-    /* border: 1px solid red; */
     padding: 1.5rem 2.5rem;
+    margin: 1rem;
     background: white;
     border-radius: 1rem;
-    height: 250px;
     box-shadow: rgba(5, 40, 92, 0.1) 0px 4px 12px;
-    height: 320px;
+    width: 25%;
+    max-width: 380px;
+    height: 360px;
+    max-height: 360px;
     cursor: default;
 }
 
-.step img{
-
+.step img {
     margin: auto auto;
 }
 
-.step h2{
+.step h2 {
     text-align: center;
     margin: auto auto;
 }
@@ -225,4 +224,97 @@ body {
 
 .step:hover {
     transform: scale(1.05);
+}
+
+/* Features section CSS */
+
+.ftrs-section {
+    padding: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.ftrs-section .heading {
+    margin: auto auto 3rem auto;
+}
+
+.features {
+    /* border: 1px solid red; */
+    width: fit-content;
+    height: fit-content;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 6rem;
+}
+
+.feature .feat-img,
+.feature .feat-desc {
+    width: 50%;
+    height: 100%;
+}
+
+.feature {
+    /* width: 60%; */
+    width: 711px;
+    height: 273px;
+    /* border: 1px solid pink; */
+    margin: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12.632px;
+    background: var(
+        --white-bg-card-grad,
+        linear-gradient(
+            136deg,
+            rgba(244, 239, 255, 0.6) 0%,
+            rgba(237, 248, 255, 0.6) 100%
+        )
+    );
+    padding: 1.3rem;
+}
+
+.feature2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row-reverse;
+    border-radius: 12.632px;
+    background: linear-gradient(
+        136deg,
+        rgba(255, 248, 239, 0.6) 0%,
+        rgba(247, 237, 255, 0.6) 100%
+    );
+}
+
+.feature button {
+    cursor: pointer;
+    width: fit-content;
+    padding: 0.8rem 1.6rem;
+    font-weight: 500;
+    font-size: 1rem;
+    color: white;
+    background: var(--stdGrad);
+    border: none;
+    border-radius: 0.7rem;
+}
+
+.feature button:hover {
+    transform: scale(1.05);
+    translate: 0 -5px;
+}
+
+.feat-desc {
+    height: 250px;
+    margin: 2rem;
+    /* padding: 2rem; */
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
+    flex-direction: column;
 }
