@@ -77,7 +77,7 @@ body {
     border-radius: 10px;
     padding: 0.7rem 1rem;
     margin: auto 0.4rem;
-    width: 70px;
+    width: fit-content;
     text-align: center;
 }
 
@@ -122,6 +122,10 @@ body {
     margin: 2.2rem auto;
 }
 
+.hero-tagline {
+    margin-top: 2rem;
+}
+
 .hero-buybtns button {
     cursor: pointer;
     width: fit-content;
@@ -154,7 +158,6 @@ body {
     font-size: 2rem;
     width: 70%;
     text-align: center;
-    margin: 2rem;
 }
 
 /* How to use section CSS */
@@ -330,7 +333,7 @@ body {
     flex-direction: column;
     width: 100%;
     background: white;
-    padding: 3rem;
+    padding: 3rem 0;
 }
 
 .plans {
@@ -340,7 +343,7 @@ body {
 }
 
 .plan {
-    margin: 3rem 1.75rem;
+    margin: 3rem 1rem;
     padding: 2rem 2rem;
     width: 205px;
     height: 22rem;
@@ -414,6 +417,11 @@ body {
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
     background-clip: text;
+}
+
+.plan19, .plan29 {
+    transform: scale(0.85);
+    opacity: 0.5;
 }
 
 /* FAQs section CSS */
