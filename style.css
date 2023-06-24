@@ -6,6 +6,7 @@
     padding: 0;
     --stdGrad: linear-gradient(to right, #8e2de2, #4a00e0);
     font-family: "DM Sans", sans-serif;
+    user-select: none;
 }
 
 html {
@@ -342,7 +343,7 @@ body {
     margin: 3rem 1.75rem;
     padding: 2rem 2rem;
     width: 205px;
-    height: 19rem;
+    height: 22rem;
     display: flex;
     justify-content: str;
     align-items: center;
@@ -471,4 +472,9 @@ body {
     border: 1px solid white;
     border-top: none;
     border-bottom: none;
+}
+
+.blur {
+    filter: blur(4px);
+    user-select: none;
 }
