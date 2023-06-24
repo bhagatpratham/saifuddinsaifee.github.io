@@ -226,6 +226,15 @@ body {
     margin: auto auto;
 }
 
+.step h3 {
+    font-size: 1.5rem;
+}
+
+.step h4{
+    margin: 1rem 0;
+    font-style: italic;
+}
+
 .step p {
     margin: auto auto;
     text-align: justify;
